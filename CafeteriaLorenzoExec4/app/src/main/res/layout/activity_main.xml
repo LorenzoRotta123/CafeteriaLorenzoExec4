@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    //---------------------------------------------------------------
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cafeteria Entrega Newba"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="#4E342E"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30sp"
+        android:id="@+id/espaco1"
+        android:layout_below="@id/titulo"/>
+
+    //---------------------------------------------------------------
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Selecione o café e a quantidade:"
+        android:textSize="25sp"
+        android:id="@+id/subtitulo"
+        android:layout_below="@id/espaco1"
+        android:gravity="center"
+        android:textColor="#4E342E"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20sp"
+        android:id="@+id/espaco2"
+        android:layout_below="@id/subtitulo"/>
+
+    //---------------------------------------------------------------
+
+    <TextView
+        android:id="@+id/cafe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/espaco2"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:text="Café: R$4,00"
+        android:textColor="#4E342E"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/cafe_mais"
+        android:onClick="cafe_mais"
+        android:layout_width="65sp"
+        android:layout_height="40sp"
+        android:layout_below="@id/espaco2"
+        android:layout_marginLeft="-284dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@+id/cafe"
+        android:text="+"
+        android:textColor="#000000"
+        android:textSize="15sp"></Button>
+
+    <Button
+        android:id="@+id/cafe_menos"
+        android:onClick="cafe_menos"
+        android:layout_width="65sp"
+        android:layout_height="40sp"
+        android:layout_below="@id/espaco2"
+        android:layout_marginLeft="7dp"
+        android:layout_marginTop="40dp"
+        android:layout_toRightOf="@+id/cafe_mais"
+        android:text="-"
+        android:textColor="#000000"
+        android:textSize="15sp"></Button>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15sp"
+        android:id="@+id/espaco3"
+        android:layout_below="@id/cafe"/>
+
+    //---------------------------------------------------------------
+
+    <TextView
+        android:id="@+id/cafe_leite"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/espaco3"
+        android:layout_marginTop="46dp"
+        android:gravity="center"
+        android:text="Café com leite: R$5,00"
+        android:textColor="#a1887f"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/cafeLeite_mais"
+        android:onClick="cafeLeite_mais"
+        android:layout_width="65sp"
+        android:layout_height="40sp"
+        android:layout_below="@id/espaco3"
+        android:layout_marginLeft="-283dp"
+        android:layout_marginTop="83dp"
+        android:layout_toRightOf="@+id/cafe_leite"
+        android:text="+"
+        android:textColor="#000000"
+        android:textSize="15sp"></Button>
+
+    <Button
+        android:id="@+id/cafeLeite_menos"
+        android:onClick="cafeLeite_menos"
+        android:layout_width="65sp"
+        android:layout_height="40sp"
+        android:layout_below="@id/espaco3"
+        android:layout_marginLeft="-206dp"
+        android:layout_marginTop="83dp"
+        android:layout_toRightOf="@+id/cafe_leite"
+        android:text="-"
+        android:textColor="#000000"
+        android:textSize="15sp"></Button>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="15sp"
+        android:id="@+id/espaco4"
+        android:layout_below="@id/cafeLeite_mais"/>
+
+    //---------------------------------------------------------------
+
+    <TextView
+        android:id="@+id/cafe_newba"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/espaco4"
+        android:layout_marginTop="3dp"
+        android:gravity="center"
+        android:text="Café Newba: R$10,00"
+        android:textColor="#3e2723"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/cafeNewba_mais"
+        android:onClick="cafeNewba_mais"
+        android:layout_width="65sp"
+        android:layout_height="40sp"
+        android:layout_below="@id/cafe_newba"
+        android:layout_marginLeft="130dp"
+        android:layout_marginTop="10dp"
+        android:text="+"
+        android:textColor="#000000"
+        android:textSize="15sp"></Button>
+
+    <Button
+        android:id="@+id/cafeNewba_menos"
+        android:layout_width="65sp"
+        android:layout_height="40sp"
+        android:layout_below="@id/espaco3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="185dp"
+        android:layout_toRightOf="@+id/cafeNewba_mais"
+        android:onClick="cafeNewba_menos"
+        android:text="-"
+        android:textColor="#000000"
+        android:textSize="15sp"></Button>
+
+    <Space
+        android:id="@+id/espaco5"
+        android:layout_width="match_parent"
+        android:layout_height="15sp"
+        android:layout_below="@id/cafeNewba_mais"
+        android:layout_marginTop="-287dp" />
+
+    //---------------------------------------------------------------
+
+    <TextView
+        android:id="@+id/quantEscrita"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/espaco5"
+        android:layout_marginTop="369dp"
+        android:gravity="center"
+        android:text="Quantidade: 0"
+        android:textColor="#3e2723"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/valorTotal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/quantEscrita"
+        android:layout_marginTop="-92dp"
+        android:gravity="center"
+        android:text="Valor Total: R$0,00"
+        android:textColor="#3e2723"
+        android:textSize="25sp" />
+
+    //-------------------------------------------------------------
+
+    <TextView
+        android:id="@+id/pedidoQuant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/valorTotal"
+        android:layout_marginTop="114dp"
+        android:text="Gostaria de 0 cafés, por favor."
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/pedidoValor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pedidoQuant"
+        android:layout_marginTop="6dp"
+        android:text="O valor total será de R$0,00. Obrigado!"
+        android:textSize="20sp" />
+
+    //-------------------------------------------------------------
+
+    <Button
+        android:id="@+id/bt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pedidoValor"
+        android:layout_marginTop="31dp"
+        android:gravity="center"
+        android:text="FAZER PEDIDO"
+        android:textSize="20sp" />
+
+</RelativeLayout>

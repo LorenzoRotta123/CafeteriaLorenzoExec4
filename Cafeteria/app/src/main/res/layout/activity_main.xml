@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cafeteria"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/question"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:text="Qual café o senhor irá querer?"
+        android:textAppearance="?android:textAppearanceLarge" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50px"
+        android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/cafeExpresso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Café Expresso (R$3,00)"
+            android:textAppearance="?android:textAppearanceMedium" />
+        <RadioButton
+            android:id="@+id/cafeLeite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Café com leite (R$3,50)"
+            android:textAppearance="?android:textAppearanceMedium" />
+        <RadioButton
+            android:id="@+id/capuccino"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Capuccino (R$5,00)"
+            android:textAppearance="?android:textAppearanceMedium" />
+        <RadioButton
+            android:id="@+id/cafeChantilly"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Café com Chantilly (R$6,00)"
+            android:textAppearance="?android:textAppearanceMedium" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/precoTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100px"
+        android:text="Preço Total: "
+        android:textAppearance="?android:textAppearanceLarge" />
+
+</LinearLayout>
